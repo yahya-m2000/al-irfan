@@ -4,14 +4,12 @@ import HeroImage from "@/components/HeroImage";
 import Video from "@/components/Video";
 import { fetchContent } from "@/lib/fetchContent";
 
-type PageProps = {
-  params: {
-    slug: string;
-  };
-};
+type PageProps = Promise<{
+  slug: string;
+}>;
 
-export default async function Page({ params }: PageProps) {
-  const { slug } = params;
+export default async function Page({ params }: { params: PageProps }) {
+  const { slug } = await params;
   const data = await fetchContent(slug);
 
   if (!data) {
