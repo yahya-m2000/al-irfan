@@ -33,8 +33,8 @@ export default function Slideshow({ images }: SlideshowProps) {
             alt={`Slide ${index}`}
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-50" />
-          <div className="absolute inset-0 bg-green-300 mix-blend-multiply" />
+          <div className="absolute inset-0 bg-black bg-opacity-35" />
+          <div className="absolute inset-0 bg-green-100 mix-blend-multiply" />
         </div>
       ))}
     </div>

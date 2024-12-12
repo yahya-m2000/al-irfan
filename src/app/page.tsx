@@ -14,7 +14,7 @@ const images = getImagesFromPublicFolder("al-irfan"); // Replace 'images' with y
 
 export default function Home() {
   return (
-    <div className="w-screen h-screen relative flex justify-center">
+    <div className="relative flex justify-center">
       <Slideshow images={images} />
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
         <h1 className="text-white md:text-4xl text-2xl font-bold">
