@@ -4,6 +4,8 @@ import React from "react";
 type HeroImageProps = {
   image?: string;
   video?: string;
+  title?: string;
+  subtitle?: string;
 };
 
 const HeroImage: React.FC<HeroImageProps> = ({ image, video }) => {

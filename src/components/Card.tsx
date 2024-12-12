@@ -3,6 +3,7 @@ import React from "react";
 type CardProps = {
   title: string;
   description: string;
+  image: string;
 };
 
 const Card: React.FC<CardProps> = ({ title, description }) => {
